@@ -3,4 +3,6 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
+  // ⚠️ IMPORTANT for GitHub Pages
+  base: '/ER-Drug-Guide/',
 })
