@@ -1,13 +1,38 @@
 [
   {
+    "name": "Aciclovir",
+    "faName": "آسیوکویر",
+    "category": "Antiviral",
+    "dose": "200 mg",
+    "routine": "BID",
+    "preferred": "10:00 - 22:00",
+    "notes": "برای درمان ویروس هرپس"
+  },
+  {
+    "name": "Acidfolic",
+    "faName": "اسیدفولیک",
+    "category": "Vitamin",
+    "dose": "5 mg",
+    "routine": "OD",
+    "preferred": "08:00",
+    "notes": "برای پیشگیری از کمبود فولات"
+  },
+  {
+    "name": "Allopurinol",
+    "faName": "آللوپورینول",
+    "category": "Antigout",
+    "dose": "100 mg",
+    "routine": "OD",
+    "preferred": "10:00",
+    "notes": "برای کاهش اسید اوریک خون"
+  },
+  {
     "name": "Amlodipine",
     "faName": "آملودیپین",
     "category": "Antihypertensive",
     "dose": "5 mg",
     "routine": "OD - BID",
     "preferred": "06:00 - 18:00",
-    "preferredRoutineHighlight": ["OD"],
-    "preferredHighlight": ["06:00"],
     "notes": "با توجه به روتین تنظیم فشار خون هر 12 ساعت / فشار خون صبح ها شروع به افزایش میکند."
   },
   {
@@ -17,7 +42,7 @@
     "dose": "2.5 / 5 mg",
     "routine": "OD",
     "preferred": "18:00",
-    "notes": ""
+    "notes": "برای تنظیم دوز و کنترل در بیماران با خطر بالای لخته خون"
   },
   {
     "name": "Aspirin",
@@ -45,6 +70,15 @@
     "routine": "OD",
     "preferred": "10:00",
     "notes": "برای جلوگیری از ناراحتی گوارشی"
+  },
+  {
+    "name": "Betahistine",
+    "faName": "بتاهیستین",
+    "category": "Antivertigo",
+    "dose": "8 mg",
+    "routine": "BID",
+    "preferred": "06:00 - 18:00",
+    "notes": "برای درمان سرگیجه و بیماری منییر"
   },
   {
     "name": "Bisoprolol / Concor",
@@ -80,9 +114,7 @@
     "dose": "1 g",
     "routine": "BID - QID",
     "preferred": "06:00 - 12:00 - 18:00 - 24:00",
-    "preferredRoutineHighlight": ["BID"],
-    "preferredHighlight": ["06:00", "18:00"],
-    "notes": ""
+    "notes": "IV - برای درمان عفونت‌های باکتریایی"
   },
   {
     "name": "Ceftriaxone",
@@ -91,7 +123,7 @@
     "dose": "1 g",
     "routine": "BID",
     "preferred": "10:00 - 22:00",
-    "notes": ""
+    "notes": "IV - برای درمان عفونت‌های باکتریایی"
   },
   {
     "name": "Cinnarizine",
@@ -127,7 +159,7 @@
     "dose": "250 / 500 mg",
     "routine": "BID",
     "preferred": "06:00 – 18:00",
-    "notes": ""
+    "notes": "برای درمان صرع"
   },
   {
     "name": "Diltiazem",
@@ -145,7 +177,7 @@
     "dose": "40/60 mg",
     "routine": "BID",
     "preferred": "10:00 - 22:00",
-    "notes": ""
+    "notes": "IV - برای جلوگیری از لخته‌های خون"
   },
   {
     "name": "Fluconazole",
@@ -154,7 +186,7 @@
     "dose": "100 mg",
     "routine": "OD",
     "preferred": "10:00",
-    "notes": ""
+    "notes": "برای درمان قارچ‌های سیستمیک"
   },
   {
     "name": "Furosemide / Lasix",
@@ -163,8 +195,6 @@
     "dose": "40 mg",
     "routine": "OD - BID",
     "preferred": "06:00 - 18:00",
-    "preferredRoutineHighlight": ["OD"],
-    "preferredHighlight": ["06:00"],
     "notes": "از دادن دیورتیک قبل از خواب خودداری کنید."
   },
   {
@@ -183,8 +213,6 @@
     "dose": "25 mg",
     "routine": "OD - BID",
     "preferred": "06:00 - 18:00",
-    "preferredRoutineHighlight": ["OD"],
-    "preferredHighlight": ["06:00"],
     "notes": "از دادن دیورتیک قبل از خواب خودداری کنید."
   },
   {
@@ -231,103 +259,5 @@
     "routine": "BID",
     "preferred": "06:00 - 18:00",
     "notes": "با توجه به روتین تنظیم فشار خون هر 12 ساعت"
-  },
-  {
-    "name": "Metformin",
-    "faName": "متفورمین",
-    "category": "Antidiabetic",
-    "dose": "500 mg",
-    "routine": "BID",
-    "preferred": "06:00 - 18:00",
-    "notes": "همراه غذا"
-  },
-  {
-    "name": "Metoprolol (Metoral)",
-    "faName": " (متورال) متوپرولول",
-    "category": "Antihypertensive",
-    "dose": "50 mg",
-    "routine": "OD - BID",
-    "preferred": "06:00 - 18:00",
-    "preferredRoutineHighlight": ["OD"],
-    "preferredHighlight": ["06:00"],
-    "notes": "با توجه به روتین تنظیم فشار خون هر 12 ساعت"
-  },
-  {
-    "name": "Montelukast",
-    "faName": "مونته‌لوکاست",
-    "category": "Anti-leukotriene",
-    "dose": "10 mg",
-    "routine": "OD",
-    "preferred": "22:00",
-    "notes": "پیک علائم آلرژی و آسم معمولاً شب‌هاست."
-  },
-  {
-    "name": "N.C",
-    "faName": "نیتروکانتین (N.C)",
-    "category": "Antianginal",
-    "dose": "2.6/6.4 mg",
-    "routine": "BID",
-    "preferred": "06:00 – 18:00",
-    "notes": ""
-  },
-  {
-    "name": "Pantoprazole",
-    "faName": "پنتوپرازول",
-    "category": "GI",
-    "dose": "40 mg",
-    "routine": "OD - BID",
-    "preferred": "06:00 - 18:00",
-    "preferredRoutineHighlight": ["OD"],
-    "preferredHighlight": ["06:00"],
-    "notes": "نیم ساعت قبل از صبحانه"
-  },
-  {
-    "name": "Prednisolone",
-    "faName": "پردنیزولون",
-    "category": "Corticosteroid",
-    "dose": "5 mg",
-    "routine": "OD",
-    "preferred": "06:00",
-    "notes": "به طور طبیعی سطح کورتیزول صبح بیشتر است. از بیخوابی و سرکوب آدرنال جلوگیری میشود."
-  },
-  {
-    "name": "Pregabalin",
-    "faName": "پرگابالین",
-    "category": "Antiepileptic",
-    "dose": "75 mg",
-    "routine": "OD - BID",
-    "preferred": "10:00 – 22:00",
-    "preferredRoutineHighlight": ["OD"],
-    "preferredHighlight": ["22:00"],
-    "notes": "باعث خواب آلودگی میشود."
-  },
-  {
-    "name": "Spironolactone / Aldactone",
-    "faName": " اسپیرونولاکتون / آلداکتون",
-    "category": "Diuretic",
-    "dose": "25 mg",
-    "routine": "OD",
-    "preferred": "06:00",
-    "notes": "از دادن دیورتیک قبل از خواب خودداری کنید."
-  },
-  {
-    "name": "Vancomycin",
-    "faName": "ونکومایسین",
-    "category": "Antibiotic",
-    "dose": "1 g",
-    "routine": "OD - BID",
-    "preferred": "10:00 - 22:00",
-    "preferredRoutineHighlight": ["OD"],
-    "preferredHighlight": ["10:00"],
-    "notes": ""
-  },
-  {
-    "name": "Warfarin",
-    "faName": "وارفارین",
-    "category": "Anticoagulant",
-    "dose": "5 mg",
-    "routine": "OD",
-    "preferred": "18:00",
-    "notes": "جهت آماده شدن جواب INR و تنظیم دوز"
   }
 ]

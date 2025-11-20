@@ -470,3 +470,26 @@ body {
 .app.dark .guide-text {
   color: #e6e6e6;
 }
+/* Styling for ampule shape (IV drug) */
+.card.ampule {
+  border: 2px solid #4e89f0;  /* Blue border for IV drugs */
+  background-color: #eef3ff;  /* Light blue background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.ampule-pill {
+  display: inline-block;
+  background: #4e89f0;  /* Ampule icon color */
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 50%;
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Adjust the card body for IV drugs */
+.card.ampule .card-body {
+  background-color: #f7faff;  /* Lighter background for IV drugs */
+  padding: 12px 14px;
+}
