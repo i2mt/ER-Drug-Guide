@@ -1,8 +1,5 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  plugins: [react()],
-  // ⚠️ IMPORTANT for GitHub Pages
-  base: '/ER-Drug-Guide/',
+  base: '/ER-Drug-Guide/',  // Make sure this matches the GitHub repository name
 })
