@@ -1,5 +1,5 @@
 // public/sw.js
-const CACHE_NAME = 'medtime-er-v1';
+const CACHE_NAME = 'medtime-er-v1.5';
 const BASE_PATH = '/ER-Drug-Guide';
 
 self.addEventListener('install', (event) => {
