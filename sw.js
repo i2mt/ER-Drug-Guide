@@ -1,9 +1,10 @@
 // public/sw.js
-const CACHE_NAME = 'medtime-er-v1.5';
+const CACHE_NAME = 'medtime-er-v3';
 const BASE_PATH = '/ER-Drug-Guide';
 
 self.addEventListener('install', (event) => {
   console.log('Service Worker installing for MedTime-ER');
+  self.skipWaiting(); // Activate immediately
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then((cache) => {
@@ -59,17 +60,20 @@ self.addEventListener('fetch', (event) => {
 
 self.addEventListener('activate', (event) => {
   console.log('Service Worker activated');
-  // Clean up old caches
+  // Clean up old caches and take control immediately
   event.waitUntil(
-    caches.keys().then((cacheNames) => {
-      return Promise.all(
-        cacheNames.map((cacheName) => {
-          if (cacheName !== CACHE_NAME) {
-            console.log('Deleting old cache:', cacheName);
-            return caches.delete(cacheName);
-          }
-        })
-      );
-    })
+    Promise.all([
+      self.clients.claim(), // Take control of all clients
+      caches.keys().then((cacheNames) => {
+        return Promise.all(
+          cacheNames.map((cacheName) => {
+            if (cacheName !== CACHE_NAME) {
+              console.log('Deleting old cache:', cacheName);
+              return caches.delete(cacheName);
+            }
+          })
+        );
+      })
+    ])
   );
 });
